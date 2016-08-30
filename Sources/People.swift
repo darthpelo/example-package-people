@@ -1,5 +1,5 @@
 public enum Gender: String {
-    case Male, Famle, Other
+    case Male, Female, Other
 }
 
 public struct Person {
@@ -35,7 +35,7 @@ protocol Reproductable {
 extension Person: Reproductable {
     func reproduce(with person: Person) -> Person? {
         if self != person {
-            return Person(age: 0, gender: .Famle, height: 0.4)
+            return Person(name: "", age: 0, gender: .Female, height: 0.4)
         } else {
             return nil
         }
