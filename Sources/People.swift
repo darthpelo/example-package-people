@@ -27,3 +27,17 @@ extension Person: Comparable {}
 public func <(lhs: Person, rhs: Person) -> Bool {
     return lhs.age < rhs.age
 }
+
+protocol Reproductable {
+    func reproduce(with person: Person) -> Person?
+}
+
+extension Person: Reproductable {
+    func reproduce(with person: Person) -> Person? {
+        if self != person {
+            return Person(age: 0, gender: .Famle, height: 0.4)
+        } else {
+            return nil
+        }
+    }
+}
