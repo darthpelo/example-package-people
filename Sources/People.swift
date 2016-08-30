@@ -33,7 +33,7 @@ protocol Reproductable {
 }
 
 extension Person: Reproductable {
-    func reproduce(with person: Person) -> Person? {
+    public func reproduce(with person: Person) -> Person? {
         if self != person {
             return Person(name: "", age: 0, gender: .Female, height: 0.4)
         } else {
