@@ -35,7 +35,7 @@ protocol Reproductable {
 extension Person: Reproductable {
     public func reproduce(with person: Person) -> Person? {
         if self != person {
-            return Person(name: "", age: 0, gender: .Female, height: 0.4)
+            return Person(name: "Sara", age: 0, gender: .Female, height: 0.4)
         } else {
             return nil
         }
