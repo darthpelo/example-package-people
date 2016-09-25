@@ -3,7 +3,7 @@ public enum Gender: String {
 }
 
 public struct Person {
-    let name: String
+    public let name: String
     let age: Int
     let gender: Gender
     let height: Float
@@ -34,7 +34,7 @@ protocol Reproductable {
 
 extension Person: Reproductable {
     public func reproduce(with person: Person) -> Person? {
-        if self != person {
+if self != person {
             return Person(name: "Sara", age: 0, gender: .Female, height: 0.4)
         } else {
             return nil
