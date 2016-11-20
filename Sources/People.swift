@@ -3,7 +3,7 @@ protocol Human {
 }
 
 public enum Gender: String {
-    case Male, Famle, Other
+    case Male, Famele, Other
 }
 
 extension Human {
